@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Formulir Pendaftaran"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+<EditText
+    android:id="@+id/et_Nama"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nama Lengkap"
+    android:inputType="text"
+    android:layout_below="@+id/tv_judul"
+    />
+
+    <EditText
+        android:id="@+id/et_Nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number"
+        android:layout_below="@+id/et_Nama"
+        />
+    
+
+    <Spinner
+        android:id="@+id/sp_JalurPendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Nomor"
+        />
+
+    <CheckBox
+        android:id="@+id/Konfirmasi_Pendaftaran"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:text="Konfirmasi Pendaftaran"
+        android:layout_below="@+id/sp_JalurPendaftaran"
+        />
+        
+        <Button
+            android:id="@+id/Daftar"
+            android:layout_width="220dp"
+            android:layout_height="47dp"
+            android:text="Daftar"
+            android:layout_below="@+id/Konfirmasi_Pendaftaran"
+            />
+
+</RelativeLayout>
